@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FolderTableViewCell: UITableViewCell {
+class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var iconImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -22,7 +22,7 @@ class FolderTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-        print("row selected", self)
+//        print("row selected", self)
     }
     
 }

@@ -9,8 +9,8 @@ import Foundation
 
 struct K {
     static let appName = "🗒️ Noting"
-    static let folderCellIdentifier = "ReusableFolderCell"
-    static let folderCellNibName = "FolderTableViewCell"
+    static let folderCellIdentifier = "ReusableTableViewCell"
+    static let folderCellNibName = "TableViewCell"
     
     struct CData {
         static let modelName = "Noting"

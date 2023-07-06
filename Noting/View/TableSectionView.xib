@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableSectionView" customModule="Noting" customModuleProvider="target">
+            <connections>
+                <outlet property="sectionTitleLabel" destination="pRO-Qg-6Hm" id="2pM-rm-olx"/>
+                <outlet property="tableView" destination="1EV-1a-CC2" id="Gr7-0S-QJc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="952" height="785"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Aky-pX-o7J">
+                    <rect key="frame" x="0.0" y="59" width="952" height="647"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="451" translatesAutoresizingMaskIntoConstraints="NO" id="92s-xD-CDu" userLabel="Section Heading">
+                            <rect key="frame" x="0.0" y="0.0" width="582.33333333333337" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRO-Qg-6Hm">
+                                    <rect key="frame" x="20.000000000000004" y="10" width="44.333333333333343" height="30"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygl-M7-QJ6">
+                                    <rect key="frame" x="515.33333333333337" y="10" width="47" height="30"/>
+                                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                    <connections>
+                                        <action selector="sectionItemAdded:" destination="-1" eventType="touchUpInside" id="DNJ-WD-8v3"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="10" left="20" bottom="10" right="20"/>
+                        </stackView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="373" placeholderIntrinsicHeight="597" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" id="1EV-1a-CC2" customClass="ContentSizedTableView" customModule="Noting" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="50" width="373" height="597"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </tableView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Aky-pX-o7J" secondAttribute="bottom" id="H07-fx-Ouo"/>
+                <constraint firstItem="Aky-pX-o7J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="PQ6-k0-8j9"/>
+                <constraint firstItem="Aky-pX-o7J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ti6-cc-YZw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Aky-pX-o7J" secondAttribute="trailing" id="ySc-QF-nk7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="445.80152671755724" y="-134.85915492957747"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
