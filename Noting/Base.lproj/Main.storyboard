@@ -64,19 +64,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDI-xD-E3V">
-                                <rect key="frame" x="332.66666666666669" y="659.66666666666663" width="50.333333333333314" height="50.333333333333371"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="plus" catalog="system" cornerStyle="capsule" buttonSize="large">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
-                                </buttonConfiguration>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kIc-LK-eMu" userLabel="Main Column">
-                                <rect key="frame" x="0.0" y="103" width="393" height="556.66666666666663"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="617"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NeN-pE-SEm">
-                                        <rect key="frame" x="10" y="10" width="373" height="536.66666666666663"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="373" placeholderIntrinsicHeight="597" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NeN-pE-SEm" customClass="ContentSizedTableView" customModule="Noting" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="373" height="597"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ReusableFolderCell" id="P4Z-JH-kBI">
                                                 <rect key="frame" x="0.0" y="50" width="373" height="43.666667938232422"/>
@@ -88,6 +80,9 @@
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLY-vo-1ER" userLabel="Spacer View">
+                                        <rect key="frame" x="10" y="607" width="373" height="0.0"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.70307406630000002" green="0.91976243260000001" blue="0.68133796869999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -95,17 +90,25 @@
                                 </constraints>
                                 <edgeInsets key="layoutMargins" top="10" left="10" bottom="10" right="10"/>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDI-xD-E3V">
+                                <rect key="frame" x="332.66666666666669" y="659.66666666666663" width="50.333333333333314" height="50.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="plus" catalog="system" cornerStyle="capsule" buttonSize="large">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bUF-jh-tza"/>
                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                         <constraints>
+                            <constraint firstItem="kIc-LK-eMu" firstAttribute="bottom" secondItem="bUF-jh-tza" secondAttribute="bottom" id="2H8-xf-AlV"/>
                             <constraint firstItem="kIc-LK-eMu" firstAttribute="top" secondItem="bUF-jh-tza" secondAttribute="top" id="JZx-jz-874"/>
-                            <constraint firstItem="fDI-xD-E3V" firstAttribute="top" secondItem="kIc-LK-eMu" secondAttribute="bottom" id="KCl-C8-NCc"/>
-                            <constraint firstItem="bUF-jh-tza" firstAttribute="trailing" secondItem="kIc-LK-eMu" secondAttribute="trailing" id="NLC-Yi-fuL"/>
-                            <constraint firstItem="bUF-jh-tza" firstAttribute="bottom" secondItem="fDI-xD-E3V" secondAttribute="bottom" constant="10" id="fCf-y2-GnB"/>
+                            <constraint firstItem="fDI-xD-E3V" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bUF-jh-tza" secondAttribute="top" id="KCl-C8-NCc"/>
+                            <constraint firstItem="kIc-LK-eMu" firstAttribute="trailing" secondItem="bUF-jh-tza" secondAttribute="trailing" id="NLC-Yi-fuL"/>
+                            <constraint firstItem="fDI-xD-E3V" firstAttribute="bottom" secondItem="bUF-jh-tza" secondAttribute="bottom" constant="-10" id="fCf-y2-GnB"/>
                             <constraint firstItem="kIc-LK-eMu" firstAttribute="leading" secondItem="bUF-jh-tza" secondAttribute="leading" id="fuz-p9-2TG"/>
                             <constraint firstItem="fDI-xD-E3V" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bUF-jh-tza" secondAttribute="leading" symbolic="YES" id="kYK-fr-EYq"/>
-                            <constraint firstItem="bUF-jh-tza" firstAttribute="trailing" secondItem="fDI-xD-E3V" secondAttribute="trailing" constant="10" id="m7j-vM-PUQ"/>
+                            <constraint firstItem="fDI-xD-E3V" firstAttribute="trailing" secondItem="bUF-jh-tza" secondAttribute="trailing" constant="-10" id="m7j-vM-PUQ"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -147,9 +150,6 @@
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

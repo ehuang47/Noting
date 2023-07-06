@@ -36,9 +36,7 @@ extension LibraryViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //        UIListContentConfiguration to modify
-        print("cell for row at")
         let x = folders[indexPath.row]
-        print(x, x.name)
         
         let regularCell = tableView.dequeueReusableCell(withIdentifier: K.folderCellIdentifier, for: indexPath)
         
@@ -47,7 +45,6 @@ extension LibraryViewController: UITableViewDataSource {
         }
         
         let folder = folders[indexPath.row]
-        print(cell, folder)
 
         cell.iconImage.image = UIImage(systemName: folder.icon!)
         cell.iconImage.tintColor = folder.iconColor!

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		AA0915D72A564B4F00579217 /* Label+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0915D52A564B4F00579217 /* Label+CoreDataClass.swift */; };
 		AA0915D82A564B4F00579217 /* Label+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0915D62A564B4F00579217 /* Label+CoreDataProperties.swift */; };
+		AA43965B2A56720000A7BB23 /* ContentSizedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA43965A2A56720000A7BB23 /* ContentSizedTableView.swift */; };
+		AA43965E2A56778B00A7BB23 /* ListSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA43965C2A56778B00A7BB23 /* ListSectionView.swift */; };
+		AA43965F2A56778B00A7BB23 /* ListSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA43965D2A56778B00A7BB23 /* ListSectionView.xib */; };
 		AA74E2842A53D176007ABD4C /* FolderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74E2822A53D176007ABD4C /* FolderTableViewCell.swift */; };
 		AA74E2852A53D176007ABD4C /* FolderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA74E2832A53D176007ABD4C /* FolderTableViewCell.xib */; };
 		AA74E2872A53D7B9007ABD4C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74E2862A53D7B9007ABD4C /* Constants.swift */; };
@@ -28,6 +31,9 @@
 /* Begin PBXFileReference section */
 		AA0915D52A564B4F00579217 /* Label+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+CoreDataClass.swift"; sourceTree = "<group>"; };
 		AA0915D62A564B4F00579217 /* Label+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AA43965A2A56720000A7BB23 /* ContentSizedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentSizedTableView.swift; sourceTree = "<group>"; };
+		AA43965C2A56778B00A7BB23 /* ListSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSectionView.swift; sourceTree = "<group>"; };
+		AA43965D2A56778B00A7BB23 /* ListSectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListSectionView.xib; sourceTree = "<group>"; };
 		AA74E2822A53D176007ABD4C /* FolderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderTableViewCell.swift; sourceTree = "<group>"; };
 		AA74E2832A53D176007ABD4C /* FolderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FolderTableViewCell.xib; sourceTree = "<group>"; };
 		AA74E2862A53D7B9007ABD4C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -115,6 +121,9 @@
 		AAC59B132A4E726000080A4E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AA43965C2A56778B00A7BB23 /* ListSectionView.swift */,
+				AA43965D2A56778B00A7BB23 /* ListSectionView.xib */,
+				AA43965A2A56720000A7BB23 /* ContentSizedTableView.swift */,
 				AA74E2822A53D176007ABD4C /* FolderTableViewCell.swift */,
 				AA74E2832A53D176007ABD4C /* FolderTableViewCell.xib */,
 			);
@@ -191,6 +200,7 @@
 				AAC59B082A4E6BE100080A4E /* Assets.xcassets in Resources */,
 				AAC59B032A4E6BE000080A4E /* Main.storyboard in Resources */,
 				AA74E2852A53D176007ABD4C /* FolderTableViewCell.xib in Resources */,
+				AA43965F2A56778B00A7BB23 /* ListSectionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA43965E2A56778B00A7BB23 /* ListSectionView.swift in Sources */,
 				AA74E29B2A5646BF007ABD4C /* Noting.xcdatamodeld in Sources */,
 				AAC59B002A4E6BE000080A4E /* LibraryViewController.swift in Sources */,
 				AA74E2842A53D176007ABD4C /* FolderTableViewCell.swift in Sources */,
@@ -211,6 +222,7 @@
 				AA74E2942A564257007ABD4C /* ColorTransformer.swift in Sources */,
 				AA0915D72A564B4F00579217 /* Label+CoreDataClass.swift in Sources */,
 				AAC59AFC2A4E6BE000080A4E /* AppDelegate.swift in Sources */,
+				AA43965B2A56720000A7BB23 /* ContentSizedTableView.swift in Sources */,
 				AAC59AFE2A4E6BE000080A4E /* SceneDelegate.swift in Sources */,
 				AA74E2872A53D7B9007ABD4C /* Constants.swift in Sources */,
 			);
