@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 import CoreData
 
 class CoreDataStack {
@@ -77,17 +78,17 @@ class CoreDataStack {
     
     // MARK: - Entity Setup
     
-    private func createFolder(name: String, icon: String, iconColor: String) {
+    private func createFolder(name: String, icon: String, iconColor: UIColor) {
         let f = Folder(context:moc)
         f.name = name
-        f.icon = icon // FIXME: change to UIImage(systemName:)
-        f.iconColor = iconColor // FIXME: change to UIColor transformative
+        f.icon = icon
+        f.iconColor = iconColor
     }
     
-    private func createLabel(name: String, color: String) {
+    private func createLabel(name: String, color: UIColor) {
         let l = Label(context: moc)
         l.name = name
-        l.color = color // FIXME: change to UIColor transformative
+        l.color = color
     }
     
     func populateEntities() {
@@ -106,12 +107,12 @@ class CoreDataStack {
                 
                 switch entity {
                 case K.CData.labelEntity:
-                    createLabel(name: "Important", color: "systemRed")
+                    createLabel(name: "Important", color: .systemRed)
                 case K.CData.folderEntity:
-                    createFolder(name: "All Documents", icon: "doc.fill", iconColor: "systemBlue")
-                    createFolder(name: "Starred", icon: "star.fill", iconColor: "systemYellow")
-                    createFolder(name: "Archived", icon: "archivebox.fill", iconColor: "systemGreen")
-                    createFolder(name: "Trash", icon: "trash.fill", iconColor: "systemRed")
+                    createFolder(name: "All Documents", icon: "doc.fill", iconColor: .systemBlue)
+                    createFolder(name: "Starred", icon: "star.fill", iconColor: .systemYellow)
+                    createFolder(name: "Archived", icon: "archivebox.fill", iconColor: .systemGreen)
+                    createFolder(name: "Trash", icon: "trash.fill", iconColor: .systemRed)
                 default:
                     break
                 }

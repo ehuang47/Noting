@@ -21,6 +21,7 @@ class LibraryViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: K.folderCellNibName, bundle: nil ), forCellReuseIdentifier: K.folderCellIdentifier)
+        tableView.layer.cornerRadius = 10
         guard let folderList = coreDataStack.getData(entity: K.CData.folderEntity) as? [Folder] else { return }
         folders = folderList
     }
@@ -47,9 +48,9 @@ extension LibraryViewController: UITableViewDataSource {
         
         let folder = folders[indexPath.row]
         print(cell, folder)
-        
+
         cell.iconImage.image = UIImage(systemName: folder.icon!)
-        cell.iconImage.tintColor = folder.iconColor
+        cell.iconImage.tintColor = folder.iconColor!
         cell.titleLabel.text = folder.name
         cell.countLabel.text = String(folder.storedNotes?.count ?? 0)
 

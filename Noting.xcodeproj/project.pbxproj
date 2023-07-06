@@ -7,32 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA0915D72A564B4F00579217 /* Label+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0915D52A564B4F00579217 /* Label+CoreDataClass.swift */; };
+		AA0915D82A564B4F00579217 /* Label+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0915D62A564B4F00579217 /* Label+CoreDataProperties.swift */; };
 		AA74E2842A53D176007ABD4C /* FolderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74E2822A53D176007ABD4C /* FolderTableViewCell.swift */; };
 		AA74E2852A53D176007ABD4C /* FolderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA74E2832A53D176007ABD4C /* FolderTableViewCell.xib */; };
 		AA74E2872A53D7B9007ABD4C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74E2862A53D7B9007ABD4C /* Constants.swift */; };
 		AA74E2932A564257007ABD4C /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74E2912A564257007ABD4C /* CoreDataStack.swift */; };
 		AA74E2942A564257007ABD4C /* ColorTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74E2922A564257007ABD4C /* ColorTransformer.swift */; };
+		AA74E2972A564394007ABD4C /* Folder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74E2952A564394007ABD4C /* Folder+CoreDataClass.swift */; };
+		AA74E2982A564394007ABD4C /* Folder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA74E2962A564394007ABD4C /* Folder+CoreDataProperties.swift */; };
+		AA74E29B2A5646BF007ABD4C /* Noting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA74E2992A5646BF007ABD4C /* Noting.xcdatamodeld */; };
 		AAC59AFC2A4E6BE000080A4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC59AFB2A4E6BE000080A4E /* AppDelegate.swift */; };
 		AAC59AFE2A4E6BE000080A4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC59AFD2A4E6BE000080A4E /* SceneDelegate.swift */; };
 		AAC59B002A4E6BE000080A4E /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC59AFF2A4E6BE000080A4E /* LibraryViewController.swift */; };
 		AAC59B032A4E6BE000080A4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC59B012A4E6BE000080A4E /* Main.storyboard */; };
-		AAC59B062A4E6BE000080A4E /* Noting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAC59B042A4E6BE000080A4E /* Noting.xcdatamodeld */; };
 		AAC59B082A4E6BE100080A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC59B072A4E6BE100080A4E /* Assets.xcassets */; };
 		AAC59B0B2A4E6BE100080A4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC59B092A4E6BE100080A4E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA0915D52A564B4F00579217 /* Label+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AA0915D62A564B4F00579217 /* Label+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Label+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		AA74E2822A53D176007ABD4C /* FolderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderTableViewCell.swift; sourceTree = "<group>"; };
 		AA74E2832A53D176007ABD4C /* FolderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FolderTableViewCell.xib; sourceTree = "<group>"; };
 		AA74E2862A53D7B9007ABD4C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AA74E2912A564257007ABD4C /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		AA74E2922A564257007ABD4C /* ColorTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTransformer.swift; sourceTree = "<group>"; };
+		AA74E2952A564394007ABD4C /* Folder+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AA74E2962A564394007ABD4C /* Folder+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AA74E29A2A5646BF007ABD4C /* Noting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Noting.xcdatamodel; sourceTree = "<group>"; };
 		AAC59AF82A4E6BE000080A4E /* Noting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Noting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC59AFB2A4E6BE000080A4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAC59AFD2A4E6BE000080A4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AAC59AFF2A4E6BE000080A4E /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		AAC59B022A4E6BE000080A4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AAC59B052A4E6BE000080A4E /* Noting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Noting.xcdatamodel; sourceTree = "<group>"; };
 		AAC59B072A4E6BE100080A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAC59B0A2A4E6BE100080A4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAC59B0C2A4E6BE100080A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +60,10 @@
 		AA74E2902A564257007ABD4C /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				AA0915D52A564B4F00579217 /* Label+CoreDataClass.swift */,
+				AA0915D62A564B4F00579217 /* Label+CoreDataProperties.swift */,
+				AA74E2952A564394007ABD4C /* Folder+CoreDataClass.swift */,
+				AA74E2962A564394007ABD4C /* Folder+CoreDataProperties.swift */,
 				AA74E2912A564257007ABD4C /* CoreDataStack.swift */,
 				AA74E2922A564257007ABD4C /* ColorTransformer.swift */,
 			);
@@ -88,7 +100,7 @@
 				AAC59B072A4E6BE100080A4E /* Assets.xcassets */,
 				AAC59B092A4E6BE100080A4E /* LaunchScreen.storyboard */,
 				AAC59B0C2A4E6BE100080A4E /* Info.plist */,
-				AAC59B042A4E6BE000080A4E /* Noting.xcdatamodeld */,
+				AA74E2992A5646BF007ABD4C /* Noting.xcdatamodeld */,
 			);
 			path = Noting;
 			sourceTree = "<group>";
@@ -189,12 +201,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA74E29B2A5646BF007ABD4C /* Noting.xcdatamodeld in Sources */,
 				AAC59B002A4E6BE000080A4E /* LibraryViewController.swift in Sources */,
 				AA74E2842A53D176007ABD4C /* FolderTableViewCell.swift in Sources */,
+				AA74E2972A564394007ABD4C /* Folder+CoreDataClass.swift in Sources */,
+				AA0915D82A564B4F00579217 /* Label+CoreDataProperties.swift in Sources */,
+				AA74E2982A564394007ABD4C /* Folder+CoreDataProperties.swift in Sources */,
 				AA74E2932A564257007ABD4C /* CoreDataStack.swift in Sources */,
 				AA74E2942A564257007ABD4C /* ColorTransformer.swift in Sources */,
+				AA0915D72A564B4F00579217 /* Label+CoreDataClass.swift in Sources */,
 				AAC59AFC2A4E6BE000080A4E /* AppDelegate.swift in Sources */,
-				AAC59B062A4E6BE000080A4E /* Noting.xcdatamodeld in Sources */,
 				AAC59AFE2A4E6BE000080A4E /* SceneDelegate.swift in Sources */,
 				AA74E2872A53D7B9007ABD4C /* Constants.swift in Sources */,
 			);
@@ -416,12 +432,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		AAC59B042A4E6BE000080A4E /* Noting.xcdatamodeld */ = {
+		AA74E2992A5646BF007ABD4C /* Noting.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				AAC59B052A4E6BE000080A4E /* Noting.xcdatamodel */,
+				AA74E29A2A5646BF007ABD4C /* Noting.xcdatamodel */,
 			);
-			currentVersion = AAC59B052A4E6BE000080A4E /* Noting.xcdatamodel */;
+			currentVersion = AA74E29A2A5646BF007ABD4C /* Noting.xcdatamodel */;
 			path = Noting.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
